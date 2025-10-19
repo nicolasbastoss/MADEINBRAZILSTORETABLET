@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <title>MADE IN BRAZIL® STORETABLET</title>
+</head>
+<body>
+  <div id="div-headbar">
+    <h1 id="main-text">MADE IN BRAZIL®</h1>
+    <h1 id="main-text-store">STORE HERE</h1>
+  </div>
+
+  <div id="access-div">
+    <form id="login-form">
+      <input type="text" id="usr" name="username" placeholder="username" required>
+      <input type="password" id="pwr" name="pwd" minlength="8" placeholder="password" required>
+      <button type="submit" id="submit-btn">enter</button>
+    </form>
+  </div>
+</body>
+
+<style>
+  body {
+    background-color: #f9f8f6;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-text {
+    letter-spacing: -2px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+  }
+
+  #main-text-store {
+    letter-spacing: -2px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+  }
+
+  #access-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  #usr,
+  #pwr {
+    width: 250px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  #usr::placeholder,
+  #pwr::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+  #usr:focus,
+  #pwr:focus {
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.15);
+    transform: scale(1.03);
+  }
+
+  #submit-btn {
+    width: 150px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background: #111;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #submit-btn:hover {
+    background: #222;
+    transform: scale(1.05);
+  }
+
+  #submit-btn:active {
+    transform: scale(0.98);
+    background: #000;
+  }
+</style>
+</html>
